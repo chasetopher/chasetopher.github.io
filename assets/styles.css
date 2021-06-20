@@ -8,12 +8,12 @@ body {
     font-family: helvetica, arial, sans-serif;
     background-color: var(--bg-color);
     line-height: 1.5;
-    padding: 5 px;
     margin: 0;
 }
 
 h2, p, {
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 /*HEADER START*/
@@ -41,9 +41,9 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-items: flex-end;
     padding-right: 30px;
+    margin: 10px;
 }
 
 nav a {
@@ -55,96 +55,72 @@ nav a {
      font-size: 26px;
      padding-bottom: 0;
 }
+/*HEADER END*/
 
-/*HOVER EFFECTS*/
-    /*about hover*/
-.about-hover:hover {
-    font-style: italic;
-    color: var(--accent-color);
-       
-}
 
-.about-hover:hover::before {
-    content: "{ ";
-}
 
-.about-hover:hover:after {
-    content: " }";
-}
-
-    /*work hover*/
-.work-hover:hover {
-font-style: italic;
-color: var(--accent-color);
-           
-}
+/*EXPERIMENTAL*/
+.left-brack {
+    height: 150%;
+    width: auto;
+    background-size: contain;
     
-.work-hover:hover::before {
-    content: "{ ";
-}
-    
-.work-hover:hover:after {
-    content: " }";
-}
-    /*contact hover*/
-.contact-hover:hover {
-    font-style: italic;
-    color: var(--accent-color);
-       
 }
 
-.contact-hover:hover::before {
-    content: "{ ";
-}
+/*END EXPERIMANTAL*/
 
-.contact-hover:hover:after {
-    content: " }";
-}
 
-    /*resume hover*/
+/*START HOVER EFFECTS*/
+
+.about-hover:hover,
+.work-hover:hover,
+.contact-hover:hover,
 .resume-hover:hover {
-    font-style: italic;
     color: var(--accent-color);
-       
 }
 
+.about-hover:hover::before,
+.work-hover:hover::before,
+.contact-hover:hover::before,
 .resume-hover:hover::before {
     content: "{ ";
 }
 
+.about-hover:hover:after,
+.work-hover:hover:after,
+.contact-hover:hover:after,
 .resume-hover:hover:after {
     content: " }";
 }
-/*HOVER EFFECT END*/
+/*END HOVER EFFECTS*/
 
 /*ABOUT ME SECTION*/
 .about {
     display: flex;
-    flex-wrap: wrap;
     background-color: blueviolet;
     height: 200px;
     width: 100%;
-    padding-left: 100px;
 
 }
 
 .about-title {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 30px;
-    border-right: 6px solid var(--accent-color);
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100%;
+    width: 25%;
     background-color: darkgreen;
 }
 
 .bio {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: left;
     padding: 30px;
+    width: 75%;
     background-color: firebrick;
 }
 
@@ -152,7 +128,6 @@ color: var(--accent-color);
 /*WORK SECTION*/
 .work {
     display: flex;
-    flex-wrap: wrap;
     background-color: cadetblue;
     height: 800px;
     width: 100%;
@@ -161,7 +136,10 @@ color: var(--accent-color);
 .work-title {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: right;
+    padding: 30px;
+    height: 100%;
+    width: 25%;
     background-color: darkgoldenrod;
     
 }
@@ -170,30 +148,36 @@ color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
+    width: 75%;
     background-color: maroon;
 }
+
+
 
 .work-title h2 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: right;
-    padding-left: 30px;
-    padding-right: 50px;
 }
 
 /*CONTACT SECTION*/
 .contact {
     background-color: midnightblue;
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 100px;
-
+    flex-direction: row;
+    margin: 0;
+    height: 200px;
+    width: 100%;
 }
 
 .contact-title {
     background-color: olivedrab;
     display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 30px;
+    height: 100%;
+    width: 25%;
 
 
 }
@@ -202,5 +186,10 @@ color: var(--accent-color);
     background-color: palevioletred;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    padding: 30px;
+    height: 100%;
+    width: 75%;
 
 }
