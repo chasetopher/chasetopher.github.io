@@ -1,7 +1,8 @@
 :root {
-    --bg-color: #f1f1ef;
-    --primary-color: #34421e;
+    --bg-color: rgb(204, 204, 204);
+    --primary-color: rgb(51, 51, 51);
     --accent-color: #c19434;
+    --hero-color: rgba(102, 102, 102, 0.52)
 }
 
 body {
@@ -18,11 +19,11 @@ h2, p, {
 
 /*HEADER START*/
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-}
+} 
 h1 {
     font-size: 38px;
     padding-left: 50px;
@@ -57,7 +58,22 @@ nav a {
 }
 /*HEADER END*/
 
+/*HERO START*/
 
+.hero {
+    height: 500px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(102, 102, 102, 0.52), rgba(204, 204, 204, 0.73)),
+    url("./images/hero-image.jpg");
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+/*HERO END*/
 
 /*EXPERIMENTAL*/
 .left-brack {
@@ -192,4 +208,14 @@ nav a {
     height: 100%;
     width: 75%;
 
+}
+
+/*CONTACT SECTION END*/
+
+/*FOOTER*/
+
+footer {
+    height: 125px;
+    width: 100%;
+    background-color: var(--primary-color);
 }
