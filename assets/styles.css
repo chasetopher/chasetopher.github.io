@@ -144,7 +144,6 @@ nav a {
 /*WORK SECTION*/
 .work {
     display: flex;
-    background-color: cadetblue;
     height: 800px;
     width: 100%;
 }
@@ -163,9 +162,9 @@ nav a {
 .work-body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 30px;
     width: 75%;
-    background-color: maroon;
 }
 
 
@@ -174,6 +173,59 @@ nav a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.project {
+
+}
+
+.project1 {
+    display: flex;
+    height: auto;
+    width: 500px;
+    background-image: url("./images/run-buddy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project2 {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    background-image: url("./images/horiseon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project3 {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+}
+
+.project4 {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    background-image: url("./images/coming-soon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project5 {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    background-image: url("./images/coming-soon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*CONTACT SECTION*/
@@ -199,7 +251,7 @@ nav a {
 }
 
 .contact-body {
-    background-color: palevioletred;
+    background-color: var(--bg-color);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
