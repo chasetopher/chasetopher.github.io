@@ -13,4 +13,4 @@
 </ul>
 
 
-![Website Screenshot](./assets\images\screenshot.png "Website Screenshot")
+![Website Screenshot](/assets/images/screenshot.png "Website Screenshot")
